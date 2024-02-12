@@ -127,7 +127,7 @@ function nextBestMove(player, maximizing) {
           } else {
             nextPlayer = "X";
           }
-          let result = nextBestMove(nextPlayer, !maximizing, depth + 1);
+          let result = nextBestMove(nextPlayer, !maximizing);
           score = result.score;
         }
         
@@ -246,3 +246,4 @@ function checkWinner() {
   // the game is still going
   return null;
 }
+
